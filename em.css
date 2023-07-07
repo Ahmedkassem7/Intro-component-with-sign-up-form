@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.all {
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: var(--Red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.all .left {
+    width: 31rem;
+}
+
+.all .left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.all .left p {
+    margin-top: 1rem;
+    line-height: 1.8;
+    color: white;
+}
+
+/* -------------------------- */
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right .try {
+    background-color: var(--Blue);
+    color: var(--Grayish-Blue);
+    padding: 15px 7rem;
+    border-radius: 10px;
+}
+
+.right .try span {
+    color: white;
+}
+
+.from {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 40px 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.from input {
+    padding: 15px;
+    width: 25rem;
+    outline: none;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    color: var(--Dark-Blue);
+    font-weight: bold;
+}
+
+.from button {
+    padding: 15px;
+    width: 27rem;
+    background-color: var(--Green);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.from p {
+    margin-top: 1rem;
+    width: 33rem;
+    font-size: 10px;
+
+}
